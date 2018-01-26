@@ -162,6 +162,8 @@ void BatchNormOp<xpu, DType, AccReal>::DoForward(mshadow::Stream<cpu> *,
     const AccReal thisWeight = w[channel];
     const AccReal thisBias = b[channel];
 
+    LOG(INFO) << "*************hello world***********" << "by dongzhuoyao";
+
     // note that var is still invstd
     if (!param_.fix_gamma) {
       if (IsWriting(req[batchnorm::kData])) {

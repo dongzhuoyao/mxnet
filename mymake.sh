@@ -1,1 +1,1 @@
-make -j USE_BLAS=atlas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1 DEV=1 DEBUG=1
+make -j USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1

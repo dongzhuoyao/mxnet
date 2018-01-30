@@ -1632,6 +1632,7 @@ Executor *Executor::Bind(nnvm::Symbol symbol,
                          const std::vector<OpReqType> &grad_req_type,
                          const std::vector<NDArray> &aux_states,
                          Executor* shared_exec) {
+  LOG(INFO) << "Executor Bind by dongzhuoyao";
   auto exec = new exec::GraphExecutor();
   exec->Init(symbol, default_ctx, group2ctx,
              in_args, arg_grad_store, grad_req_type, aux_states,

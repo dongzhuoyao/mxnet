@@ -165,6 +165,7 @@ class Optimizer(object):
         >>> type(adam)
         <class 'mxnet.optimizer.Adam'>
         """
+        print ("create_optimizer from {}".format(__file__))
         if name.lower() in Optimizer.opt_registry:
             return Optimizer.opt_registry[name.lower()](**kwargs)
         else:

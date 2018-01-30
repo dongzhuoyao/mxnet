@@ -182,6 +182,7 @@ class BaseModule(object):
         self.optimizer_initialized = False
         self._symbol = None
         self._total_exec_bytes = 0
+        self.logger.info("dongzhuoyao: base_module init from {}".format(__file__))
 
     ################################################################################
     # High Level API

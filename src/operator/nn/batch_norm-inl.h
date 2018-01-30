@@ -116,6 +116,8 @@ class BatchNormOp : public Operator {
     using namespace mshadow;
     using namespace mshadow::expr;
 
+    LOG(INFO) << "BN forward by dongzhuoyao";
+
     CHECK_EQ(in_data.size(), 3U);
     CHECK_EQ(aux_states.size(), 2U);
     if (ctx.is_train) {
